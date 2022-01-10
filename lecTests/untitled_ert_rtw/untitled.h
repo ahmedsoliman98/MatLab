@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'untitled'.
  *
- * Model version                  : 1.0
+ * Model version                  : 1.1
  * Simulink Coder version         : 9.0 (R2018b) 24-May-2018
- * C/C++ source code generated on : Sun Jan  2 19:18:08 2022
+ * C/C++ source code generated on : Sun Jan  9 18:50:03 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -22,7 +22,7 @@
 #include "rtwtypes.h"
 #include "rtw_continuous.h"
 #include "rtw_solver.h"
-#include "MW_arduino_digitalio.h"
+#include "MW_PWM.h"
 #endif                                 /* untitled_COMMON_INCLUDES_ */
 
 #include "untitled_types.h"
@@ -39,12 +39,15 @@
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
-  codertarget_arduinobase_block_T obj; /* '<S1>/Digital Output' */
+  codertarget_arduinobase_int_b_T obj; /* '<Root>/PWM' */
 } DW_untitled_T;
 
 /* Parameters (default storage) */
 struct P_untitled_T_ {
-  real_T Constant_Value;               /* Expression: 0
+  real_T SliderGain_gain;              /* Mask Parameter: SliderGain_gain
+                                        * Referenced by: '<S1>/Slider Gain'
+                                        */
+  real_T Constant_Value;               /* Expression: 1
                                         * Referenced by: '<Root>/Constant'
                                         */
 };
@@ -69,6 +72,12 @@ extern void untitled_terminate(void);
 extern RT_MODEL_untitled_T *const untitled_M;
 
 /*-
+ * These blocks were eliminated from the model due to optimizations:
+ *
+ * Block '<Root>/Scope' : Unused code path elimination
+ */
+
+/*-
  * The generated code includes comments that allow you to trace directly
  * back to the appropriate location in the model.  The basic format
  * is <system>/block_name, where system is the system number (uniquely
@@ -83,7 +92,7 @@ extern RT_MODEL_untitled_T *const untitled_M;
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'untitled'
- * '<S1>'   : 'untitled/Digital Output'
+ * '<S1>'   : 'untitled/Slider Gain'
  */
 #endif                                 /* RTW_HEADER_untitled_h_ */
 

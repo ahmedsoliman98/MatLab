@@ -22,7 +22,7 @@ function varargout = untitled(varargin)
 
 % Edit the above text to modify the response to help untitled
 
-% Last Modified by GUIDE v2.5 02-Jan-2022 18:06:01
+% Last Modified by GUIDE v2.5 09-Jan-2022 19:11:31
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -54,12 +54,10 @@ function untitled_OpeningFcn(hObject, eventdata, handles, varargin)
 %            command line (see VARARGIN)
 % Global variable must be declare here in openning fuction that call at
 % first time make sure that interperater and global
-global counter ;
-counter = uint8(0);
+global Arduino;
+Arduino = arduino('COM3','Uno');
+configurePin(Arduino,'D13','DigitalOutput');
 
-global a ;
-a = imread('iron_MarkIII.jpg');
-axes(handles.img);
 % Choose default command line output for untitled
 handles.output = hObject;
 
@@ -108,3 +106,21 @@ imshow(a);
 % hObject    handle to ImgShow (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in LedON.
+function LedON_Callback(hObject, eventdata, handles)
+% hObject    handle to LedON (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global Arduino
+writeDigitalPin(Arduino,'D13',1);
+
+
+% --- Executes on button press in LedOFF.
+function LedOFF_Callback(hObject, eventdata, handles)
+% hObject    handle to LedOFF (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global Arduino
+writeDigitalPin(Arduino,'D13',0);

@@ -2,7 +2,7 @@
 ## Makefile generated for Simulink model 'untitled'. 
 ## 
 ## Makefile     : untitled.mk
-## Generated on : Sun Jan 02 19:16:22 2022
+## Generated on : Sun Jan 09 18:50:10 2022
 ## MATLAB Coder version: 4.1 (R2018b)
 ## 
 ## Build Info:
@@ -29,7 +29,7 @@ MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2018b
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2018b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
 MASTER_ANCHOR_DIR         = 
-START_DIR                 = G:/ES_ITI3010/MatLab/MatLabCodes
+START_DIR                 = G:/ES_ITI3010/MatLab/MatLabCodes/lecTests
 ARCH                      = win64
 SOLVER                    = 
 SOLVER_OBJ                = 
@@ -233,7 +233,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/ARDUIN~2/include -I$(START_DIR)/untitled_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino -I$(ARDUINO_ROOT)/hardware/arduino/avr/variants/standard -I$(ARDUINO_ROOT)/libraries/Servo/src -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/ARDUIN~1/include -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include -I$(ARDUINO_ROOT)/hardware/tools/avr/avr/include/avr -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/shared/EXTERN~1/include
+INCLUDES_BUILDINFO = -I$(START_DIR) -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/shared/svd/include -I$(START_DIR)/untitled_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino -I$(ARDUINO_ROOT)/hardware/arduino/avr/variants/standard -I$(ARDUINO_ROOT)/libraries/Servo/src -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/ARDUIN~1/include -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/ARDUIN~2/include -I$(ARDUINO_ROOT)/hardware/tools/avr/avr/include/avr -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/shared/EXTERN~1/include
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 
@@ -241,7 +241,7 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_ = -DMODEL=untitled -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0 -DEXIT_FAILURE=1 -DEXTMODE_DISABLEPRINTF -DEXTMODE_DISABLETESTING -DEXTMODE_DISABLE_ARGS_PROCESSING=1 -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT -DMW_TIMERID=1 -DMW_PRESCALAR=1024 -DMW_TIMERCOUNT=62411 -DMW_SCHEDULERCOUNTER=1 -D_RTT_BAUDRATE_SERIAL0_=9600 -D_RTT_ANALOG_REF_=0
+DEFINES_ = -DMODEL=untitled -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0 -DEXIT_FAILURE=1 -DEXTMODE_DISABLEPRINTF -DEXTMODE_DISABLETESTING -DEXTMODE_DISABLE_ARGS_PROCESSING=1 -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT -DMW_TIMERID=2 -DMW_PRESCALAR=1024 -DMW_TIMERCOUNT=131 -DMW_SCHEDULERCOUNTER=25 -D_RTT_BAUDRATE_SERIAL0_=9600 -D_RTT_ANALOG_REF_=0
 DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
 DEFINES_IMPLIED = -DTID01EQ=0
 DEFINES_SKIPFORSIL = -DEXIT_FAILURE=1 -DEXTMODE_DISABLEPRINTF -DEXTMODE_DISABLETESTING -DEXTMODE_DISABLE_ARGS_PROCESSING=1 -DSTACK_SIZE=64 -DRT
@@ -253,7 +253,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_IMPLIED) $(DEFINES_SKIPFOR
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp $(START_DIR)/untitled_ert_rtw/untitled.c $(START_DIR)/untitled_ert_rtw/untitled_data.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_pulse.S $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/hooks.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/WInterrupts.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_analog.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_digital.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_pulse.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_shift.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/abi.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/CDC.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial1.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial2.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial3.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/PluggableUSB.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/IPAddress.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/new.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/Print.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/Stream.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/Tone.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/USBCore.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/WMath.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/WString.cpp C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/arduinotarget/registry/../src/MW_ArduinoHWInit.cpp C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/arduinotarget/registry/../scheduler/src/arduinoAVRScheduler.cpp
+SRCS = C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp $(START_DIR)/untitled_ert_rtw/untitled.c $(START_DIR)/untitled_ert_rtw/untitled_data.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_pulse.S $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/hooks.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/WInterrupts.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_analog.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_digital.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_pulse.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/wiring_shift.c $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/abi.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/CDC.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial1.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial2.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/HardwareSerial3.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/PluggableUSB.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/IPAddress.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/new.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/Print.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/Stream.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/Tone.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/USBCore.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/WMath.cpp $(ARDUINO_ROOT)/hardware/arduino/avr/cores/arduino/WString.cpp C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/arduinotarget/registry/../src/MW_ArduinoHWInit.cpp C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/arduinotarget/registry/../scheduler/src/arduinoAVRScheduler.cpp
 
 MAIN_SRC = $(START_DIR)/untitled_ert_rtw/ert_main.c
 
@@ -263,7 +263,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = MW_arduino_digitalio.o untitled.o untitled_data.o wiring_pulse.S.o hooks.o WInterrupts.o wiring.o wiring_analog.o wiring_digital.o wiring_pulse.o wiring_shift.o abi.o CDC.o HardwareSerial.o HardwareSerial0.o HardwareSerial1.o HardwareSerial2.o HardwareSerial3.o PluggableUSB.o IPAddress.o new.o Print.o Stream.o Tone.o USBCore.o WMath.o WString.o MW_ArduinoHWInit.o io_wrappers.o arduinoAVRScheduler.o
+OBJS = MW_PWM.o untitled.o untitled_data.o wiring_pulse.S.o hooks.o WInterrupts.o wiring.o wiring_analog.o wiring_digital.o wiring_pulse.o wiring_shift.o abi.o CDC.o HardwareSerial.o HardwareSerial0.o HardwareSerial1.o HardwareSerial2.o HardwareSerial3.o PluggableUSB.o IPAddress.o new.o Print.o Stream.o Tone.o USBCore.o WMath.o WString.o MW_ArduinoHWInit.o io_wrappers.o arduinoAVRScheduler.o
 
 MAIN_OBJ = ert_main.o
 

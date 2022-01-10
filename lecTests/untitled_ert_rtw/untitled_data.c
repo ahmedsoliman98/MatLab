@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'untitled'.
  *
- * Model version                  : 1.0
+ * Model version                  : 1.1
  * Simulink Coder version         : 9.0 (R2018b) 24-May-2018
- * C/C++ source code generated on : Sun Jan  2 19:18:08 2022
+ * C/C++ source code generated on : Sun Jan  9 18:50:03 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -18,10 +18,15 @@
 
 /* Block parameters (default storage) */
 P_untitled_T untitled_P = {
-  /* Expression: 0
+  /* Mask Parameter: SliderGain_gain
+   * Referenced by: '<S1>/Slider Gain'
+   */
+  255.0,
+
+  /* Expression: 1
    * Referenced by: '<Root>/Constant'
    */
-  0.0
+  1.0
 };
 
 /*

@@ -189,17 +189,33 @@ else
 
     switch(Oper)
         case 1
-            set(handles.Reasult,'String',Number1+Number2);
-            set(handles.ErrorConsAppear,'String','No Error detect');
+            if isnan(Number1+Number2)
+                set(handles.ErrorConsAppear,'String','Error must enter number');
+            else
+                set(handles.Reasult,'String',Number1+Number2);
+                set(handles.ErrorConsAppear,'String','No Error detect');
+            end
         case 2
-            set(handles.Reasult,'String',Number1-Number2);
-            set(handles.ErrorConsAppear,'String','No Error detect');
+            if isnan(Number1-Number2)
+                set(handles.ErrorConsAppear,'String','Error must enter number');
+            else
+                set(handles.Reasult,'String',Number1-Number2);
+                set(handles.ErrorConsAppear,'String','No Error detect');
+            end
         case 3
-            set(handles.Reasult,'String',Number1*Number2);
-            set(handles.ErrorConsAppear,'String','No Error detect');
+            if isnan(Number1*Number2)
+                set(handles.ErrorConsAppear,'String','Error must enter number');
+            else
+                set(handles.Reasult,'String',Number1*Number2);
+                set(handles.ErrorConsAppear,'String','No Error detect');
+            end
         case 4
-            set(handles.Reasult,'String',Number1/Number2);
-            set(handles.ErrorConsAppear,'String','No Error detect');
+            if isnan(Number1/Number2)
+                set(handles.ErrorConsAppear,'String','Error must enter number');
+            else
+                set(handles.Reasult,'String',Number1/Number2);
+                set(handles.ErrorConsAppear,'String','No Error detect');
+            end
     end
 end
             %set(handles.Reasult,'String',num2str(Number1+Number2));
