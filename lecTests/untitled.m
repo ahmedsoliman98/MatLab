@@ -58,6 +58,7 @@ global Arduino;
 Arduino = arduino('COM3','Uno');
 configurePin(Arduino,'D13','DigitalOutput');
 
+
 % Choose default command line output for untitled
 handles.output = hObject;
 

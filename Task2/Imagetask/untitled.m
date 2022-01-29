@@ -53,7 +53,7 @@ function untitled_OpeningFcn(hObject, eventdata, handles, varargin)
 % varargin   command line arguments to untitled (see VARARGIN)
 global happy;
 global sad;
-happy =  imread('Happy.jpg');;
+happy =  imread('Happy.jpg');
 sad = imread('Sad.jpg');
 
 
