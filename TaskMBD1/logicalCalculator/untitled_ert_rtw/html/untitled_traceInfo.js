@@ -1,0 +1,31 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "untitled"};
+	this.sidHashMap["untitled"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<Root>/Input"] = {sid: "untitled:1"};
+	this.sidHashMap["untitled:1"] = {rtwname: "<Root>/Input"};
+	this.rtwnameHashMap["<Root>/Input1"] = {sid: "untitled:2"};
+	this.sidHashMap["untitled:2"] = {rtwname: "<Root>/Input1"};
+	this.rtwnameHashMap["<Root>/Bitwise AND"] = {sid: "untitled:5"};
+	this.sidHashMap["untitled:5"] = {rtwname: "<Root>/Bitwise AND"};
+	this.rtwnameHashMap["<Root>/Bitwise NOR"] = {sid: "untitled:7"};
+	this.sidHashMap["untitled:7"] = {rtwname: "<Root>/Bitwise NOR"};
+	this.rtwnameHashMap["<Root>/Bitwise NOT"] = {sid: "untitled:8"};
+	this.sidHashMap["untitled:8"] = {rtwname: "<Root>/Bitwise NOT"};
+	this.rtwnameHashMap["<Root>/Bitwise OR"] = {sid: "untitled:9"};
+	this.sidHashMap["untitled:9"] = {rtwname: "<Root>/Bitwise OR"};
+	this.rtwnameHashMap["<Root>/Bitwise XOR"] = {sid: "untitled:4"};
+	this.sidHashMap["untitled:4"] = {rtwname: "<Root>/Bitwise XOR"};
+	this.rtwnameHashMap["<Root>/Outport"] = {sid: "untitled:11"};
+	this.sidHashMap["untitled:11"] = {rtwname: "<Root>/Outport"};
+	this.rtwnameHashMap["<Root>/Outport1"] = {sid: "untitled:12"};
+	this.sidHashMap["untitled:12"] = {rtwname: "<Root>/Outport1"};
+	this.rtwnameHashMap["<Root>/Outport2"] = {sid: "untitled:13"};
+	this.sidHashMap["untitled:13"] = {rtwname: "<Root>/Outport2"};
+	this.rtwnameHashMap["<Root>/Outport3"] = {sid: "untitled:14"};
+	this.sidHashMap["untitled:14"] = {rtwname: "<Root>/Outport3"};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();
